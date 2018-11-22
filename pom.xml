@@ -18,6 +18,7 @@
   <build>
     <finalName>java-tomcat-maven-example</finalName>
     <plugins>
+      <!-- added a comment -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
