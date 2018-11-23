@@ -16,7 +16,11 @@ pipeline {
 				}
 			}
 		}
-
+		stage ('Deploy Build to staging area') {
+			steps {
+				build job :  'servlet_deploy_staging_pipe'
+			}
+		}
 		
 	}
 }
