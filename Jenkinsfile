@@ -1,9 +1,11 @@
 pipeline {
 	agent any
+	tools {
+    	maven 'M3'
+  	}
 	stages {
 		
 		stage ('Build') {
-			def mvn_version = 'M2'
 			steps {
 				sh 'mvn clean package'
 			}
